@@ -1,0 +1,7 @@
+.first-btn:hover{
+    box-shadow: 1px 1px 5px 1px orangered;
+ }
+ 
+ .sec-btn:hover{
+     box-shadow: 1px 1px 5px 1px #110606;
+ }

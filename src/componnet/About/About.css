@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+/* about-btn-hire */
+.about-btn-hire {
+    background: hsla(240, 28%, 14%, 0.867);
+  }
+  .about-btn-hire:hover {
+    background: hsla(240, 28%, 14%, 0.867);
+    box-shadow: 1px 1px 5px 1px orangered;
+  }
+  .about-btn-resume {
+    background: orangered;
+  }
+  .about-btn-resume:hover {
+    background: orangered;
+    box-shadow: 1px 1px 5px 1px hsla(240, 28%, 14%, 0.867);
+  }
+  
+  /* list */
+  .about-list {
+    list-style: none;
+  }
+  .about-list-item {
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px !important;
+    font-weight: 500;
+  }
+  /* card-text */
+  .card-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px !important;
+    line-height: 30px;
+    font-weight: 500;
+  }
+  
+
+ 

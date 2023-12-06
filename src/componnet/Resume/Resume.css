@@ -1,0 +1,35 @@
+/* resume-icon-bg*/
+.resume-icone-bg{
+    background: hwb(240 11% 85% / 0.867);
+    width: 40px;
+    color: #fff;
+    height: 75px;
+    font-size: larger;
+}
+
+
+.scrollspy::-webkit-scrollbar{
+    display: none;
+}
+.active{
+    color: orangered !important;
+}
+
+.scrollspy-example::-webkit-scrollbar{
+    display: none;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.resume-icon-text{
+    height: 35px !important;
+    font-size: medium;
+    font-weight: 600;
+    padding: 5px 0 !important;
+}  
+
+
+
+
+

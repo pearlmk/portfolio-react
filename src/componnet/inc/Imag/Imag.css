@@ -1,0 +1,26 @@
+.card-bg{
+    width: 200px;
+    height: 250px;
+    border-radius: 10px 10px 10px 0 !important;
+}
+img{
+height: 200px;
+}
+.hover-effect:hover{
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 576px) {
+    
+    img{
+        width: 100%;
+    }
+
+}
+
+
+
+
+

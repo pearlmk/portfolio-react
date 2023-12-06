@@ -1,0 +1,5 @@
+.progress{
+    --bs-progress-bar-bg:  hsla(240, 20%, 13%, 0.867);
+    --bs-progress-bg: orangered;
+    border-radius: none !important;
+}

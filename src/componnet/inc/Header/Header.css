@@ -1,0 +1,10 @@
+/* create bar */
+.create-bar{
+    width: 30px;
+    height: 10px;
+    background: orangered;
+    border-radius: 5px 5px;  
+}
+.border{
+    width: 150px;
+}

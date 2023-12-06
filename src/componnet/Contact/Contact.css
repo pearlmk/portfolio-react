@@ -1,0 +1,31 @@
+.contact-row{
+    background: hsla(240, 28%, 14%, 0.867);
+}
+.contact-head{
+ letter-spacing: 3px;
+}
+.contact-subTitle{
+ letter-spacing: 6px;
+}
+input{
+ background: hsla(0, 7%, 86%, 0.982) !important;
+}
+textarea{
+ background: hsla(0, 7%, 86%, 0.982) !important;
+}
+.form-label{
+ letter-spacing: 2px;
+ font-weight: 500;
+}
+.subit-btn{
+  background:  hsla(240, 28%, 14%, 0.867);
+  border: 2px solid orangered;
+}
+.subit-btn:hover{
+ background:  hsla(240, 28%, 14%, 0.867);
+ border: 2px solid orangered;
+}
+.subit-btn:active{
+ background:  hsla(240, 28%, 14%, 0.867);
+ border: 2px solid orangered;
+}
