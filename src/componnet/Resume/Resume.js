@@ -3,114 +3,121 @@ import { FaUserGraduate } from "react-icons/fa";
 import { FaComputer } from "react-icons/fa6";
 import { BsGraphDown } from "react-icons/bs";
 import { IoColorPalette } from "react-icons/io5";
-import "./Resume.css";
+import "../Resume/Resume.css";
 import Project from "../inc/Project/Project";
 import Inst from "../inc/Interests/Inst";
 import Education from "../inc/Education/Education";
 import Processbar from "../inc/processbar/Processbar";
-
-
+import Col from "react-bootstrap/Col";
+import Nav from "react-bootstrap/Nav";
+import Row from "react-bootstrap/Row";
+import Tab from "react-bootstrap/Tab";
+import ListGroup from "react-bootstrap/ListGroup";
 
 function Resume() {
-
   return (
-    <div className="container-fluid ">
-      <div className="row my-5">
-        <div className="col-12 col-lg-4 offset-lg-1">
-          <div
-            className=""
-          >
-            {/* icons */}
-            <ul
-              id="simple-list-example"
-              className="unstyle-list list-inline my-4 border-end"
-            >
-              <li className="d-flex list-inline-item">
-                <span className="resume-icone-bg px-2 py-5 mt-2">
-                  <FaUserGraduate />
-                </span>
-                <span className="resume-icon-text mt-5 w-75 hover:bg-sky hover:w-[65%] hover:rounded-r-2xl hover:text-white">
-                  <a className="ms-3" smooth href="#Education">
-                    Education
-                  </a>
-                </span>
-              </li>
-              <li className="d-flex list-inline-item">
-                <span className="resume-icone-bg py-4 px-2">
-                  <FaComputer />
-                </span>
-                <span className="resume-icon-text mt-3  w-75 hover:bg-sky hover:w-[65%] hover:rounded-r-2xl hover:text-white">
-                  <a className="ms-3" href="#programming">
-                    programming Skills
-                  </a>
-                </span>
-              </li>
-              <li className="d-flex list-inline-item">
-                <span className="resume-icone-bg py-3 px-2">
-                  <BsGraphDown />
-                </span>
-                <span className="resume-icon-text mt-2 w-75 hover:bg-sky hover:w-[65%] hover:rounded-r-2xl hover:text-white">
-                  <a className="ms-3" href="#Projects">
-                    Projects
-                  </a>
-                </span>
-              </li>
-              <li className="d-flex list-inline-item">
-                <span className="resume-icone-bg py-2 px-2">
-                  <IoColorPalette />
-                </span>
-                <span className="resume-icon-text w-75 hover:bg-sky hover:w-[65%] hover:rounded-r-2xl hover:text-white">
-                  <a className="ms-3" href="#Interests">
-                    Interests
-                  </a>
-                </span>
-              </li>
-            </ul>
+    <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+      <Row className="p-3 my-5 h-100">
+        <Col md={5} lg={4} className="offset-lg-1 overflow-hidden d-flex">
+          {/* resume icons */}
+          <div className="bg-sky h-100" style={{ width: "45px" }}>
+            <ListGroup as="ul" className="rounded-0 h-100 py-3 py-md-5">
+              <ListGroup.Item as="li" className="border-0 text-white my-2">
+                <FaUserGraduate />
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className="border-0 text-white my-2">
+                <FaComputer />
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className="border-0 text-white my-2">
+                <IoColorPalette />
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className="border-0 text-white my-2">
+                <BsGraphDown />
+              </ListGroup.Item>
+            </ListGroup>
           </div>
-        </div>
-        <div
-          className="col-12 col-lg-6 px-3 ms-lg-3"
+          {/* resume title */}
+          <div className="w-full py-3 py-md-5">
+            <Nav variant="pills" className="flex-column">
+              <Nav.Item className="h-10 my-2">
+                <Nav.Link
+                  eventKey="first"
+                  className="text-sky font-bold hover:text-white hover:bg-sky"
+                  style={{ borderRadius: "0 20px 20px 0 ", width: "80%" }}
+                >
+                  Education
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item className="h-10 my-2">
+                <Nav.Link
+                  eventKey="second"
+                  className="text-sky font-bold hover:text-white hover:bg-sky text-nowrap"
+                  style={{ borderRadius: "0 20px 20px 0 ", width: "80%" }}
+                >
+                  Programming skills
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item className="h-10 my-2">
+                <Nav.Link
+                  eventKey="third"
+                  className="text-sky font-bold hover:text-white hover:bg-sky"
+                  style={{ borderRadius: "0 20px 20px 0 ", width: "80%" }}
+                >
+                  Project
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item className="h-10 my-2">
+                <Nav.Link
+                  eventKey="fourth"
+                  className="text-sky font-bold hover:text-white hover:bg-sky"
+                  style={{ borderRadius: "0 20px 20px 0 ", width: "80%" }}
+                >
+                  Interests
+                </Nav.Link>
+              </Nav.Item>
+            </Nav>
+          </div>
+        </Col>
+        <div className="vr shadow"></div>
+        <Col
+          md={6}
+          className="p-3 ps-5 p-md-3 ps-md-5 scrollspy"
+          style={{ height: "300px", overflow: "scroll" }}
         >
-          <ul
-            style={{ height: "350px", overflowY:"scroll" }}
-            data-bs-spy="scroll"
-            data-bs-target="#simple-list-example"
-            data-bs-offset="0"
-            data-bs-smooth-scroll="true"
-            className="scrollspy"
-          >
-            <li id="Education" className="">
+          <Tab.Content>
+            <Tab.Pane eventKey="first" className="">
               <Education />
-            </li>
-            <li id="programming" className="grid py-4">
-              <Processbar />
-            </li>
-            <li id="Projects" className="py-3">
-              <div className=" py-1">
-                <Project
-                  Title="personal portfolio website"
-                  subTitle="Technologys Used React js,Bootstrap,React router,tailwind."
-                  summary="A personal portfolio website href showcase all my details and  project at one place."
-                />
-                <Project
-                  Title="Landing page"
-                  subTitle="Technologys Used HTML,CSS,Javascript,Bootstrap."
-                  summary="Created a Landing page website using HTML,CSS,JavaScript for practice,showcasing my web development skills."
-                />
-                <Project
-                  Title="Food Website"
-                  subTitle="Technologys Used HTML,CSS,Javascript,Jquery,Bootstrap."
-                  summary="Created a Food website using HTML,CSS,JavaScript for practice,showcasing my web development skills."
-                />
-              </div>
-            </li>
-            <li id="Interests" className="py-3">
+            </Tab.Pane>
+            <Tab.Pane eventKey="second">
+              <Row className="row row-cols-2">
+                <Processbar />
+              </Row>
+            </Tab.Pane>
+            <Tab.Pane eventKey="third">
+              {" "}
+              <Project
+                Title="personal portfolio website"
+                subTitle="Technologys Used React js,Bootstrap,React router,tailwind."
+                summary="A personal portfolio website href showcase all my details and  project at one place."
+              />
+              <Project
+                Title="Landing page"
+                subTitle="Technologys Used HTML,CSS,Javascript,Bootstrap."
+                summary="Created a Landing page website using HTML,CSS,JavaScript for practice,showcasing my web development skills."
+              />
+              <Project
+                Title="Food Website"
+                subTitle="Technologys Used HTML,CSS,Javascript,Jquery,Bootstrap."
+                summary="Created a Food website using HTML,CSS,JavaScript for practice,showcasing my web development skills."
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="fourth">
               <Inst />
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+            </Tab.Pane>
+          </Tab.Content>
+        </Col>
+      </Row>
+    </Tab.Container>
   );
 }
 

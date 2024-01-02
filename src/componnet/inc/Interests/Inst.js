@@ -26,7 +26,7 @@ function Inst() {
             <h3 className="text-lg fw-bold text-capitalize my-2">
               {item.Title}
             </h3>
-            <p className="text-sm">{item.PARA}</p>
+            <p className="text-sm text-dark">{item.PARA}</p>
           </li>
         ))}
       </ul>

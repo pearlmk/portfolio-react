@@ -1,12 +1,4 @@
 /* resume-icon-bg*/
-.resume-icone-bg{
-    background: hwb(240 11% 85% / 0.867);
-    width: 40px;
-    color: #fff;
-    height: 75px;
-    font-size: larger;
-}
-
 
 .scrollspy::-webkit-scrollbar{
     display: none;
@@ -14,21 +6,14 @@
 .active{
     color: orangered !important;
 }
-
-.scrollspy-example::-webkit-scrollbar{
-    display: none;
+ 
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background: #0b0b22dd;
 }
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.list-group-item {
+    background: transparent;
+    height: 100%;
 }
-.resume-icon-text{
-    height: 35px !important;
-    font-size: medium;
-    font-weight: 600;
-    padding: 5px 0 !important;
-}  
-
 
 
 

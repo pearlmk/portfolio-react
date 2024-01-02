@@ -18,12 +18,14 @@ function Processbar() {
   return (
     <>
      { Bar.map((item)=>(
+      <ul className="unstyled-list">
         <li className="my-3 mx-3">
                <h3 className="fs-6  my-2 fw-semibold text-capitalize antialiased font-serif">
                {item.name}
              </h3>
              <ProgressBar className="rounded-0" now={item.value} label={`${item.value}%`}  style={{width: "80%"}}/>
     </ li>
+    </ul>
      ))
      }
     </>
