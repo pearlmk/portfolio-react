@@ -4,7 +4,7 @@ import Header from '../componnet/inc/Header/Header'
 
 function contactpage() {
   return (
-    <div id="ContactMe" className='py-3'>
+    <div id="ContactMe" className='py-3 overflow-hidden'>
       <Header Title="Contact Me" subTitle="Let Keep In Touch" />
       <Contact />
     </div>

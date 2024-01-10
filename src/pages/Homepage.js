@@ -4,7 +4,7 @@ import Homefooter from '../componnet/inc/Homefooter/Homefooter'
 
 function Homepage() {
   return (
-    <div id="Home" className='overflow-hidden'>
+    <div id="Home" className='overflow-hidden overflow-hidden'>
        <Home />
        <Homefooter />
     </div>

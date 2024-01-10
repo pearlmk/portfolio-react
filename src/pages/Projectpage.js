@@ -5,7 +5,7 @@ import Header from '../componnet/inc/Header/Header'
 
 function Projectpage() {
   return (
-   <div id="Project" className='py-3'>
+   <div id="Project" className='py-3 overflow-hidden'>
      <Header Title="My Project" subTitle="What my client Say About Me ?" />
      <Project />
    </div>

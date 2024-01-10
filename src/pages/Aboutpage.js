@@ -6,7 +6,7 @@ import Header from '../componnet/inc/Header/Header'
 
 function Aboutpage() {
   return (
-    <div id="AboutMe" className='py-3'>
+    <div id="AboutMe" className='py-3 overflow-hidden'>
     <Header
     Title="About"
     subTitle="Why choose me?"
